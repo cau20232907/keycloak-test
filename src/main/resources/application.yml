@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/login-console
+          jwk-set-uri: http://localhost:8080/realms/login-console/protocol/openid-connect/certs
+
+keycloak:
+  issuer-url: http://localhost:8080/realms/login-console
+
+server:
+  port: 8081
